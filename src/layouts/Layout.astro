@@ -1,4 +1,6 @@
 ---
+import './src/styles/global.css';
+
 interface Props {
   title: string;
 }
@@ -18,7 +20,7 @@ const { title } = Astro.props;
     <script is:inline>
       (function () {
         window.counterscale = {
-          q: [["set", "siteId", "foos-marketing"], ["trackPageview"]],
+          q: [['set', 'siteId', 'foos-marketing'], ['trackPageview']],
         };
       })();
     </script>
