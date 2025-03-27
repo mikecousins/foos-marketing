@@ -1,10 +1,11 @@
 ---
 import { motion } from 'framer-motion';
+import clsx from 'clsx';
 import Subheading from './Subheading.astro';
 
 const {
   class: className,
-  fade,
+  fade = [],
   eyebrow,
   title,
   description,
@@ -17,12 +18,12 @@ const {
   whileHover="active"
   variants={{ idle: {}, active: {} }}
   data-dark={dark ? 'true' : undefined}
-  class:list={[
+  className={clsx(
     className,
     'group relative flex flex-col overflow-hidden rounded-lg',
     'bg-white ring-1 shadow-xs ring-black/5',
     'data-dark:bg-gray-800 data-dark:ring-white/15',
-  ]}
+  )}
 >
   <div class="relative h-80 shrink-0">
     <slot />

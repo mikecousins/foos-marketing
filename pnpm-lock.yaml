@@ -26,6 +26,9 @@ importers:
       astro:
         specifier: ^5.5.5
         version: 5.5.5(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.37.0)(typescript@5.7.3)(yaml@2.7.0)
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
       framer-motion:
         specifier: ^12.6.2
         version: 12.6.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
