@@ -1,0 +1,12 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+type Props = HTMLAttributes<'a'>;
+const props = Astro.props;
+---
+
+<li>
+  <a {...props} class="font-medium text-gray-950 data-hover:text-gray-950/75">
+    <slot />
+  </a>
+</li>
