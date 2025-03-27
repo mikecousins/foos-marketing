@@ -12,6 +12,7 @@
   "dependencies": {
     "@headlessui/react": "^2.1.1",
     "@heroicons/react": "^2.1.4",
+    "@sanity/icons": "^3.7.0",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.52.2",
     "clsx": "^2.1.1",
@@ -26,6 +27,7 @@
     "sanity": "^3.55.0"
   },
   "devDependencies": {
+    "@sanity/client": "^6.28.3",
     "@tailwindcss/postcss": "^4.0.6",
     "@types/node": "^20",
     "@types/react": "^18",

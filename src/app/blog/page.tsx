@@ -45,7 +45,7 @@ async function FeaturedPosts() {
       <Container>
         <h2 className="text-2xl font-medium tracking-tight">Featured</h2>
         <div className="mt-6 grid grid-cols-1 gap-8 lg:grid-cols-3">
-          {featuredPosts.map((post) => (
+          {featuredPosts.map((post: any) => (
             <div
               key={post.slug}
               className="relative flex flex-col rounded-3xl bg-white p-2 ring-1 shadow-md shadow-black/5 ring-black/5"
@@ -104,7 +104,7 @@ async function Categories({ selected }: { selected?: string }) {
     <div className="flex flex-wrap items-center justify-between gap-2">
       <Menu>
         <MenuButton className="flex items-center justify-between gap-2 font-medium">
-          {categories.find(({ slug }) => slug === selected)?.title ||
+          {categories.find(({ slug }: { slug: any }) => slug === selected)?.title ||
             'All categories'}
           <ChevronUpDownIcon className="size-4 fill-gray-900" />
         </MenuButton>
@@ -122,7 +122,7 @@ async function Categories({ selected }: { selected?: string }) {
               <p className="col-start-2 text-sm/6">All categories</p>
             </Link>
           </MenuItem>
-          {categories.map((category) => (
+          {categories.map((category: any) => (
             <MenuItem key={category.slug}>
               <Link
                 href={`/blog?category=${category.slug}`}
@@ -161,7 +161,7 @@ async function Posts({ page, category }: { page: number; category?: string }) {
 
   return (
     <div className="mt-6">
-      {posts.map((post) => (
+      {posts.map((post: any) => (
         <div
           key={post.slug}
           className="relative grid grid-cols-1 border-b border-b-gray-100 py-10 first:border-t first:border-t-gray-200 max-sm:gap-3 sm:grid-cols-3"
