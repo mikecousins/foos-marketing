@@ -1,0 +1,15 @@
+---
+const { class: className, as: Element, ...rest } = Astro.props;
+const dark = false;
+---
+
+<Element
+  {...rest}
+  data-dark={dark ? 'true' : undefined}
+  class:list={[
+    className,
+    'text-4xl font-medium tracking-tighter text-pretty text-gray-950 data-dark:text-white sm:text-6xl',
+  ]}
+>
+  <slot />
+</Element>

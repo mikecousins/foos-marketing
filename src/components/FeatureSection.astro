@@ -1,0 +1,19 @@
+---
+import Container from './Container.astro';
+import Heading from './Heading.astro';
+import Screenshot from './Screenshot.astro';
+
+---
+<div class="overflow-hidden">
+  <Container class="pb-24">
+    <Heading as="h2" class="max-w-3xl">
+      A snapshot of your entire sales pipeline.
+    </Heading>
+    <Screenshot
+      width={1216}
+      height={768}
+      src="/screenshots/app.png"
+      class="mt-16 h-[36rem] sm:h-auto sm:w-[76rem]"
+    />
+  </Container>
+</div>
