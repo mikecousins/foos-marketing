@@ -25,10 +25,10 @@ const tiers = [
     name: 'Starter' as const,
     slug: 'starter',
     description: 'Everything you need to start selling.',
-    priceMonthly: 99,
+    priceMonthly: 0,
     href: '#',
     highlights: [
-      { description: 'Up to 3 team members' },
+      { description: 'Generate your retirement projections' },
       { description: 'Up to 5 deal progress boards' },
       { description: 'Source leads from select platforms' },
       { description: 'RadiantAI integrations', disabled: true },
