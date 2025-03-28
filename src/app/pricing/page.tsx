@@ -26,7 +26,7 @@ const tiers = [
     slug: 'starter',
     description: 'Everything you need to get started.',
     priceMonthly: 0,
-    href: '#',
+    href: 'https://app.foos.ca',
     highlights: [
       { description: 'Generate your retirement projections' },
       { description: 'Create a financial plan for each year' },
@@ -53,7 +53,7 @@ const tiers = [
     slug: 'pro',
     description: 'Unlocks the power to let you optimize your retirement.',
     priceMonthly: 19,
-    href: '#',
+    href: 'https://app.foos.ca',
     highlights: [
       { description: 'Generate your retirement projections' },
       { description: 'Create a financial plan for each year' },
@@ -80,7 +80,7 @@ const tiers = [
     slug: 'smart',
     description: 'Let us optimize it for you. We will show you the ultimate plan.',
     priceMonthly: 99,
-    href: '#',
+    href: 'https://app.foos.ca',
     highlights: [
       { description: 'Generate your retirement projections' },
       { description: 'Create a financial plan for each year' },
