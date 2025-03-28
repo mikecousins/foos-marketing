@@ -24,12 +24,12 @@ const tiers = [
   {
     name: 'Starter' as const,
     slug: 'starter',
-    description: 'Everything you need to start selling.',
+    description: 'Everything you need to get started.',
     priceMonthly: 0,
     href: '#',
     highlights: [
       { description: 'Generate your retirement projections' },
-      { description: 'Up to 5 deal progress boards' },
+      { description: 'Choose from our basic withdrawal strategies' },
       { description: 'Source leads from select platforms' },
       { description: 'RadiantAI integrations', disabled: true },
       { description: 'Competitor analysis', disabled: true },
@@ -50,10 +50,10 @@ const tiers = [
     ],
   },
   {
-    name: 'Growth' as const,
-    slug: 'growth',
-    description: 'All the extras for your growing team.',
-    priceMonthly: 149,
+    name: 'Pro' as const,
+    slug: 'pro',
+    description: 'Unlocks the power to let you optimize your retirement.',
+    priceMonthly: 19,
     href: '#',
     highlights: [
       { description: 'Up to 10 team members' },
@@ -78,10 +78,10 @@ const tiers = [
     ],
   },
   {
-    name: 'Enterprise' as const,
-    slug: 'enterprise',
-    description: 'Added flexibility to close deals at scale.',
-    priceMonthly: 299,
+    name: 'Smart' as const,
+    slug: 'smart',
+    description: 'Let us optimize it for you. We will show you the ultimate plan.',
+    priceMonthly: 99,
     href: '#',
     highlights: [
       { description: 'Unlimited active team members' },
@@ -110,10 +110,10 @@ const tiers = [
 function Header() {
   return (
     <Container className="mt-16">
-      <Heading as="h1">Pricing that grows with your team size.</Heading>
+      <Heading as="h1">Choose your plan, see your future.</Heading>
       <Lead className="mt-6 max-w-3xl">
-        Companies all over the world have closed millions of deals with Radiant.
-        Sign up today and start selling smarter.
+        Gain clarity into what your future looks like. Then we can build
+        your dream retirement together.
       </Lead>
     </Container>
   )
@@ -147,7 +147,7 @@ function PricingCard({ tier }: { tier: (typeof tiers)[number] }) {
               ${tier.priceMonthly}
             </div>
             <div className="text-sm/5 text-gray-950/75">
-              <p>USD</p>
+              <p>CAD</p>
               <p>per month</p>
             </div>
           </div>
