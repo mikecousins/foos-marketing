@@ -45,9 +45,7 @@ const tiers = [
       { section: 'Analysis', name: 'Dashboard reporting', value: false },
       { section: 'Analysis', name: 'Community insights', value: false },
       { section: 'Analysis', name: 'Performance analysis', value: false },
-      { section: 'Support', name: 'Email support', value: true },
-      { section: 'Support', name: '24 / 7 call center support', value: false },
-      { section: 'Support', name: 'Dedicated account manager', value: false },
+      { section: 'Support', name: 'Email support', value: false },
     ],
   },
   {
@@ -75,8 +73,6 @@ const tiers = [
       { section: 'Analysis', name: 'Community insights', value: true },
       { section: 'Analysis', name: 'Performance analysis', value: true },
       { section: 'Support', name: 'Email support', value: true },
-      { section: 'Support', name: '24 / 7 call center support', value: true },
-      { section: 'Support', name: 'Dedicated account manager', value: false },
     ],
   },
   {
@@ -104,8 +100,6 @@ const tiers = [
       { section: 'Analysis', name: 'Community insights', value: true },
       { section: 'Analysis', name: 'Performance analysis', value: true },
       { section: 'Support', name: 'Email support', value: true },
-      { section: 'Support', name: '24 / 7 call center support', value: true },
-      { section: 'Support', name: 'Dedicated account manager', value: true },
     ],
   },
 ]
@@ -159,7 +153,7 @@ function PricingCard({ tier }: { tier: (typeof tiers)[number] }) {
           </div>
           <div className="mt-8">
             <h3 className="text-sm/6 font-medium text-gray-950">
-              Start selling with:
+              Maximize your retirement with:
             </h3>
             <ul className="mt-3 space-y-3">
               {tier.highlights.map((props, featureIndex) => (
