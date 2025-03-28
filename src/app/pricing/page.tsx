@@ -29,10 +29,11 @@ const tiers = [
     href: '#',
     highlights: [
       { description: 'Generate your retirement projections' },
+      { description: 'Create a financial plan for each year' },
+      { description: 'Track your progress against your goals'},
       { description: 'Choose from our basic withdrawal strategies' },
-      { description: 'Source leads from select platforms' },
-      { description: 'RadiantAI integrations', disabled: true },
-      { description: 'Competitor analysis', disabled: true },
+      { description: 'Choose from our advanced withdrawal strategies', disabled: true },
+      { description: 'Optimized withdrawal strategy for your situation', disabled: true },
     ],
     features: [
       { section: 'Features', name: 'Accounts', value: 3 },
@@ -56,11 +57,12 @@ const tiers = [
     priceMonthly: 19,
     href: '#',
     highlights: [
-      { description: 'Up to 10 team members' },
-      { description: 'Unlimited deal progress boards' },
-      { description: 'Source leads from over 50 verified platforms' },
-      { description: 'RadiantAI integrations' },
-      { description: '5 competitor analyses per month' },
+      { description: 'Generate your retirement projections' },
+      { description: 'Create a financial plan for each year' },
+      { description: 'Track your progress against your goals'},
+      { description: 'Choose from our basic withdrawal strategies' },
+      { description: 'Choose from our advanced withdrawal strategies' },
+      { description: 'Optimized withdrawal strategy for your situation', disabled: true },
     ],
     features: [
       { section: 'Features', name: 'Accounts', value: 10 },
@@ -84,11 +86,12 @@ const tiers = [
     priceMonthly: 99,
     href: '#',
     highlights: [
-      { description: 'Unlimited active team members' },
-      { description: 'Unlimited deal progress boards' },
-      { description: 'Source leads from over 100 verified platforms' },
-      { description: 'RadiantAI integrations' },
-      { description: 'Unlimited competitor analyses' },
+      { description: 'Generate your retirement projections' },
+      { description: 'Create a financial plan for each year' },
+      { description: 'Track your progress against your goals'},
+      { description: 'Choose from our basic withdrawal strategies' },
+      { description: 'Choose from our advanced withdrawal strategies' },
+      { description: 'Optimized withdrawal strategy for your situation' },
     ],
     features: [
       { section: 'Features', name: 'Accounts', value: 'Unlimited' },
@@ -152,7 +155,7 @@ function PricingCard({ tier }: { tier: (typeof tiers)[number] }) {
             </div>
           </div>
           <div className="mt-8">
-            <Button href={tier.href}>Start a free trial</Button>
+            <Button href={tier.href}>Get started</Button>
           </div>
           <div className="mt-8">
             <h3 className="text-sm/6 font-medium text-gray-950">
