@@ -26,6 +26,12 @@ export default function RootLayout({
           title="The Foos Blog"
           href="/blog/feed.xml"
         />
+        <script
+          id="counterscale-script"
+          data-site-id="foos-marketing"
+          src="https://counterscale.cousins.ai/tracker.js"
+          defer
+        ></script>
       </head>
       <body className="text-gray-950 antialiased">{children}</body>
     </html>
